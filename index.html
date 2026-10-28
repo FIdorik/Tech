@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Направления курса веб-разработки: HTML, CSS, Git, формы, доступность и DevTools.">
+  <title>Курс веб-разработки · HTML и CSS</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#about" aria-label="Курс веб-разработки — начало страницы">Веб / старт<span class="brand-dot" aria-hidden="true">.</span></a>
+      <nav aria-label="Основная навигация">
+        <ul class="nav-list">
+          <li><a href="#about">О курсе</a></li>
+          <li><a href="#tracks">Направления</a></li>
+          <li><a href="#schedule">Расписание</a></li>
+          <li><a href="#signup">Регистрация</a></li>
+        </ul>
+      </nav>
+      <span class="header-label">Практическая работа / 01</span>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" id="about" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">HTML · CSS · Семантика</p>
+        <h1 id="page-title">От первой строки<br>до своей страницы<span class="accent">.</span></h1>
+        <p class="lead">Шесть направлений, чтобы разобраться в устройстве веб-страниц: от семантики HTML до проверки интерфейса в DevTools.</p>
+        <a class="button" href="#tracks">Изучить направления <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="hero-visual">
+        <img src="images/cover.svg" width="900" height="520" alt="Обложка HTML + CSS: схема веб-страницы с заголовком, текстом и кнопкой">
+        <figcaption><span>01 / Основы веб-разработки</span><span>HTML + CSS</span></figcaption>
+      </figure>
+    </section>
+    <section class="section section-tinted" id="tracks" aria-labelledby="catalog-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">01 / Направления</p><h2 id="catalog-title">Шесть точек старта</h2></div><p>Темы и описания из content.csv.</p></div>
+        <div class="cards">
+          <article class="card" aria-labelledby="track-1">
+            <div class="card-meta"><span>Основа</span><span>01</span></div>
+            <h3 id="track-1">HTML</h3>
+            <p>Структура и семантика документа</p>
+            <p class="card-value">Значение <strong>8</strong></p>
+          </article>
+          <article class="card" aria-labelledby="track-2">
+            <div class="card-meta"><span>Оформление</span><span>02</span></div>
+            <h3 id="track-2">CSS</h3>
+            <p>Стили и адаптивность</p>
+            <p class="card-value">Значение <strong>9</strong></p>
+          </article>
+          <article class="card" aria-labelledby="track-3">
+            <div class="card-meta"><span>Инструменты</span><span>03</span></div>
+            <h3 id="track-3">Git</h3>
+            <p>История изменений</p>
+            <p class="card-value">Значение <strong>7</strong></p>
+          </article>
+          <article class="card" aria-labelledby="track-4">
+            <div class="card-meta"><span>HTML</span><span>04</span></div>
+            <h3 id="track-4">Forms</h3>
+            <p>Пользовательский ввод</p>
+            <p class="card-value">Значение <strong>6</strong></p>
+          </article>
+          <article class="card" aria-labelledby="track-5">
+            <div class="card-meta"><span>Качество</span><span>05</span></div>
+            <h3 id="track-5">Accessibility</h3>
+            <p>Доступность интерфейса</p>
+            <p class="card-value">Значение <strong>10</strong></p>
+          </article>
+          <article class="card" aria-labelledby="track-6">
+            <div class="card-meta"><span>Проверка</span><span>06</span></div>
+            <h3 id="track-6">DevTools</h3>
+            <p>Исследование DOM и стилей</p>
+            <p class="card-value">Значение <strong>8</strong></p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section container" id="schedule" aria-labelledby="details-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / Расписание</p><h2 id="details-title">План знакомства с темами</h2></div></div>
+      <p id="table-note" class="table-note">В dataset нет дат и времени занятий. Здесь представлены темы в исходном порядке; столбец «Значение» сохраняет поле value без дополнительной трактовки.</p>
+      <div class="table-scroll" role="region" aria-label="План курса — таблица с горизонтальной прокруткой" tabindex="0">
+        <table aria-describedby="table-note">
+          <caption>Темы курса по данным content.csv</caption>
+          <thead><tr><th scope="col">№</th><th scope="col">Тема</th><th scope="col">Категория</th><th scope="col">Содержание</th><th scope="col">Значение</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><th scope="row">HTML</th><td>Основа</td><td>Структура и семантика документа</td><td>8</td></tr>
+            <tr><td>2</td><th scope="row">CSS</th><td>Оформление</td><td>Стили и адаптивность</td><td>9</td></tr>
+            <tr><td>3</td><th scope="row">Git</th><td>Инструменты</td><td>История изменений</td><td>7</td></tr>
+            <tr><td>4</td><th scope="row">Forms</th><td>HTML</td><td>Пользовательский ввод</td><td>6</td></tr>
+            <tr><td>5</td><th scope="row">Accessibility</th><td>Качество</td><td>Доступность интерфейса</td><td>10</td></tr>
+            <tr><td>6</td><th scope="row">DevTools</th><td>Проверка</td><td>Исследование DOM и стилей</td><td>8</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="section section-tinted" id="signup" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div><p class="eyebrow">03 / Регистрация</p><h2 id="contact-title">Начните с интереса.</h2><p class="lead">Выберите направление и подготовьте учебную заявку на курс.</p><p id="form-note">Учебная форма без обработки заявок. Используйте вымышленные данные: после проверки браузером они появятся в адресной строке. Поля со звёздочкой обязательны.</p></div>
+        <form class="contact-form" action="#form-result" method="get" aria-describedby="form-note">
+          <div class="field"><label for="name">Имя *</label><input id="name" name="name" autocomplete="given-name" required minlength="2" maxlength="60" placeholder="Как к вам обращаться"></div>
+          <div class="field"><label for="email">Электронная почта *</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="120" placeholder="name@example.com"></div>
+          <div class="form-row">
+            <div class="field"><label for="topic">Направление *</label><select id="topic" name="topic" required><option value="">Выберите направление</option><option value="1">HTML</option><option value="2">CSS</option><option value="3">Git</option><option value="4">Forms</option><option value="5">Accessibility</option><option value="6">DevTools</option></select></div>
+            <div class="field"><label for="participants">Количество участников *</label><input id="participants" name="participants" type="number" min="1" max="30" step="1" value="1" required></div>
+          </div>
+          <div class="field"><label for="message">Сообщение *</label><textarea id="message" name="message" rows="4" required minlength="10" maxlength="1000" placeholder="От 10 до 1000 символов"></textarea></div>
+          <button class="button" type="submit">Проверить заявку <span aria-hidden="true">↗</span></button>
+          <p id="form-result" class="form-result" tabindex="-1">Встроенная проверка пройдена. Это учебная демонстрация: заявка не обрабатывается.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer container"><img class="footer-logo" src="images/logo.svg" width="900" height="520" alt="TRPO Course — иллюстрация учебного курса"><a class="brand" href="#about">Веб / старт<span class="brand-dot" aria-hidden="true">.</span></a><p>Технологии разработки программного обеспечения · Практическая работа №1</p><a href="#about">Наверх ↑</a></footer>
+</body>
+</html>
